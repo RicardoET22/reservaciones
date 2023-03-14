@@ -1,0 +1,150 @@
+@font-face {
+    font-family: 'Faustina';
+    src: url('../fonts/Faustina.ttf') format('truetype');
+    font-weight: 500;
+  }
+  @font-face {
+    font-family: 'Faustina-SemiBold';
+    src: url('../fonts/Faustina-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+  }
+*{
+    margin:0;
+    padding: 0;
+    font-family: "Faustina", sans-serif;
+}
+header{
+    padding: 5px 5px 5px 5px;
+    position: relative;   
+    height: 5vh;
+    
+    top: 0;
+    background-color: transparent;
+    z-index: 10;
+}
+
+#tema{
+  position: absolute;
+top: 0px;
+right: 0px;
+width: 120px;
+height: 30px;
+background-color: #07cd533e;
+}
+.capas{
+  width: 20px;
+height: 20px;
+border-radius: 50%;
+border: 1px solid #d0f4ff;
+margin-top: 4px;
+margin-left: 8px;
+display: inline-block;
+}
+#capa1{
+background-color: #0a2730;
+}
+#capa2{
+  background-color: #35ffae;
+  }
+
+#capa3{
+background-color: #d4f5ff;
+}
+.ligero{
+  color: #0a2730;
+  font-family: 'Times New Roman', Times, serif;    
+}
+.row{
+    width: 100%;
+  }
+#menu img{
+    width: 65px;
+    height: 62px;
+    margin-right: 20px;
+}
+
+#menu #nombre{
+    font-family:"Faustina-SemiBold";
+    color: #1f628e;
+    font-size: 28px;
+}
+#links{
+    
+    width: 50%;
+
+}
+#links a{
+    text-decoration: none;
+    color: black;
+    font-size: 28px;
+
+}
+#links li a:hover{
+   
+    font-family: "Faustina-SemiBold";
+    border-bottom: 4px solid  #1f628e;;
+}
+h1{
+  float: left;
+  font-family: "Faustina-SemiBold";
+  
+}
+footer{
+    background-color: #5208e5;
+    text-align: center;
+    font-size: 16px;
+    color: #fff;
+    padding: 10px 0px;
+}	
+
+
+#act11{
+    margin-top: 10vh;
+	min-height:100px;
+	background-color: #62a5c2;
+	font-size:20px;
+    padding: 10px;
+} 
+
+
+.bg-default {
+    background-color: #d9edfaa0;
+  } 
+
+  form {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+
+  input[type="text"], input[type="number"], input[type="checkbox"] {
+    display: block;
+    margin-bottom: 10px;
+    padding: 10px;
+    width: 100%;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+  }
+
+  input[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 3px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+
+  input[type="submit"]:hover {
+    background-color: #0069d9;
+  }
+
+  /* Estilos para la sección de resultados */
+  #resultados {
+    margin-top: 20px;
+    font-size: 18px;
+  }

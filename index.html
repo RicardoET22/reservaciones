@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css'>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <title>Reservaciones</title>
+    
+</head>
+<body class="bg-default">
+  <header>
+    <nav class="navbar ">
+      <section class="container-fluid " id="menu">
+        <a id="nombre" class="navbar-brand align-middle " href="#"  >
+          <img src="img/richydev.png" alt="R" class="d-inline-block align-text-middle">
+          Ricardo Espinosa
+        </a>
+        <ul id="links" class="nav nav-justified nav-fill justify-content-end">
+          <li class="nav-item">
+            <a class="nav-link activo" aria-current="page" href="#">Actividad 11</a>
+          </li>
+          <div id="tema">
+            <div class="capas" id="capa1" title="dark" onclick="dark()"></div>
+            <div class="capas" id="capa2" title="light" ></div>
+            <div class="capas" id="capa3" title="defaulte" ></div>
+        </div>
+        </ul>
+      </section>
+    </nav>
+  </header>
+  <section id="act11">
+    <h1>Formulario de reservación</h1><hr><br>
+    <form id="reservacion-form"> 
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" name="nombre" required><br>
+      <label for="correo">Correo:</label>
+      <input type="email" id="correo" name="correo" required><br>
+      <label for="lugares">Número de lugares:</label>
+      <input type="number" id="lugares" name="lugares" required><br>
+
+      <label for="personas">Número de adultos:</label>
+      <input type="number" id="personas" name="personas"><br>
+
+      <label for="habitaciones">Número de habitaciones:</label>
+      <input type="number" id="habitaciones" name="habitaciones"><br>
+
+      <label for="pasajes">Número de pasajes:</label>
+      <input type="number" id="pasajes" name="pasajes"><br>
+
+      <label for="menores">¿Hay menores de edad en la reservación?</label>
+      <input type="checkbox" id="menores" name="menores"><br>
+
+      <div id="edades-menores">
+        <!-- Aquí se mostrarán las cajas de captura de las edades de los menores -->
+      </div>
+
+      <input type="submit" value="Enviar">
+    </form>
+
+     <!-- Pantalla modal para mostrar los resultados -->
+     <div class="modal fade" id="resultados-modal" tabindex="-1" role="dialog" aria-labelledby="resultados-modal-label" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="resultados-modal-label">Confirmación de la reservación</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Cerrar">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body" id="resultados-modal-body">
+            <!-- Aquí se mostrarán los resultados -->
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    </section>
+    <footer>DAND EVN503</footer>
+
+    <script src="js/script.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.3/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
+</body>
+</html>
